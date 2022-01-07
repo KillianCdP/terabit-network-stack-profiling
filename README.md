@@ -100,7 +100,7 @@ sudo update-grub && reboot
 1. To install `perf` from the kernel source directory, first install the build dependencies.
 
 ```
-sudo apt install -y systemtap-sdt-dev libaudit-common libaudit-dev libaudit1 libssl-dev   \
+sudo apt install -y systemtap-sdt-dev libaudit-common libaudit-dev libaudit1 libssl-dev dwarves \
                     libiberty-dev binutils-dev zlib1g zlib1g-dev libzstd1-dev liblzma-dev \
                     libcap-dev libnuma-dev libbabeltrace-ctf-dev libbabeltrace-dev
 ```
@@ -294,10 +294,10 @@ all-opts      54.330     1.770  0.610  10.990  18.250  2.960  3.670   2.220
 
 We have used the follwing hardware and software configurations for running the experiments shown in the paper.
 
-* CPU: 4-Socket Intel Xeon Gold 6128 3.4 GHz with 6 Cores per Socket (with Hyperthreading Disabled)
-* RAM: 256 GB
-* NIC: Mellanox ConnectX-5 Ex VPI (100 Gbps)
-* OS: Ubuntu 16.04 with Linux 5.4.43 (patched)
+* CPU: AMD EPYC 7443P and Intel(R) Xeon(R) CPU E5-2420 v2 @ 2.20GHz
+* RAM: 64 GB
+* NIC: Mellanox ConnectX-6 (100 Gbps)
+* OS: Ubuntu 20.04 with Linux 5.4.43 (patched)
 
 #### Caveats of Our Work
 
